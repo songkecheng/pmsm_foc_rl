@@ -1,0 +1,28 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "python.terminal.activateEnvironment": true,
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.outDir": "%DIR%",
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.latex.tools": [
+    {
+      "name": "tectonic",
+      "command": "/home/user/.local/bin/tectonic",
+      "args": [
+        "--synctex",
+        "--keep-logs",
+        "--keep-intermediates",
+        "-o",
+        "%OUTDIR%",
+        "%DOC%"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "tectonic",
+      "tools": ["tectonic"]
+    }
+  ],
+  "latex-workshop.latex.recipe.default": "tectonic"
+}
